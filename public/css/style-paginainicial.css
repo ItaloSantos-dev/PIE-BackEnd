@@ -1,0 +1,220 @@
+    :root {
+        --marrom-escuro: #3E2723;
+        --marrom-medio: #5D4037;
+        --marrom-claro: #8D6E63;
+        --bege: #D7CCC8;
+        --bege-claro: #EFEBE9;
+        --dourado: #BCAAA4;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        color: var(--marrom-escuro);
+        background-color: var(--bege-claro);
+        line-height: 1.6;
+    }
+
+    h1, h2, h3, h4, h5, .display-1, .display-2, .display-3, .display-4, .display-5 {
+        font-family: 'Crimson Text', serif;
+        font-weight: 400;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        background: url("/imagens/paginainicial/banquin.png");
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero-title {
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+        color: var(--bege-claro);
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+        max-width: 500px;
+        color: var(--bege-claro);
+    }
+
+    .hero-badge {
+        background-color: var(--marrom-escuro);
+        color: white;
+        max-width: 150px;
+        border-radius: 0;
+    }
+
+    /* Botões */
+    .btn-marrom {
+        background-color: var(--marrom-escuro);
+        border-color: var(--marrom-escuro);
+        color: white;
+        border-radius: 0;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        padding: 12px 30px;
+    }
+
+    .btn-marrom:hover {
+        background-color: var(--marrom-medio);
+        border-color: var(--marrom-medio);
+        color: white;
+    }
+
+    .btn-outline-marrom {
+        color: var(--marrom-escuro);
+        border-color: var(--marrom-escuro);
+        border-radius: 0;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        padding: 12px 30px;
+    }
+
+    .btn-outline-marrom:hover {
+        background-color: var(--marrom-escuro);
+        color: white;
+    }
+
+    /* Seções */
+    .section-title {
+        position: relative;
+        margin-bottom: 3rem;
+        color: var(--marrom-escuro);
+    }
+
+    .section-title::after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        width: 60px;
+        height: 2px;
+        background-color: var(--marrom-claro);
+    }
+
+    .section-subtitle {
+        color: var(--marrom-medio);
+    }
+
+    /* Cards de Coleções */
+    .collection-card {
+        height: 400px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .collection-card img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .collection-card:hover img {
+        transform: scale(1.05);
+    }
+
+    .collection-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgba(62, 39, 35, 0.8) 0%, transparent 100%);
+        display: flex;
+        align-items: flex-end;
+        padding: 2rem;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .collection-card:hover .collection-overlay {
+        opacity: 1;
+    }
+
+    /* Seção Quem Somos */
+    .quem-somos {
+        background-color: var(--bege);
+    }
+
+    .quem-somos-badge {
+        background-color: var(--marrom-escuro);
+        color: white;
+        max-width: 200px;
+        border-radius: 0;
+    }
+
+    .valor-icon {
+        width: 50px;
+        height: 50px;
+        background-color: var(--marrom-claro);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+    }
+
+    /* Lançamentos */
+    .produto-card {
+        background-color: white;
+        border: 1px solid var(--bege);
+        transition: all 0.3s ease;
+        height: 100%;
+    }
+
+    .produto-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .preco {
+        color: var(--marrom-escuro);
+        font-weight: bold;
+    }
+
+    .parcelamento {
+        color: var(--marrom-medio);
+        font-size: 0.9rem;
+    }
+
+    .badge-lancamento {
+        background-color: var(--marrom-claro);
+        color: white;
+        border-radius: 0;
+        font-size: 0.8rem;
+    }
+
+    /* Newsletter */
+    .newsletter {
+        background-color: var(--marrom-escuro);
+        color: white;
+    }
+
+    .newsletter .form-control {
+        border-radius: 0;
+        border: none;
+    }
+
+    .newsletter .btn {
+        border-radius: 0;
+        background-color: var(--marrom-claro);
+        border: none;
+        color: white;
+    }
+
+    /* Ajustes responsivos */
+    @media (max-width: 768px) {
+        .hero-title .display-1 {
+            font-size: 3rem;
+        }
+        
+        .collection-card {
+            height: 300px;
+            margin-bottom: 1.5rem;
+        }
+    }
