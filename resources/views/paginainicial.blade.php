@@ -1,6 +1,8 @@
 @extends('layouts.main')
 @section('titulo', 'Pagina incial')
+@section('style')
 <link rel="stylesheet" href="{{asset('/css/style-paginainicial.css')}}">
+@endsection
 @section('content')
         <main class="p-0">
         <!-- Primeira seção -->
