@@ -1,75 +1,83 @@
-
 @extends('layouts.main')
-@section('titulo', "Sobre")
+
+@section('titulo', 'Sobre Nós')
+
+@section('style')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
-    <!--CSS basico-->
     <style>
-        h1,p{
+        h1{
             text-align: center;
             color: white;
-            
+
         }
-        header, footer{
+        p{
+            color: rgba(255, 255, 255, 1);
+            font-weight: bolder;
+
+        }
+
+        header, footer {
             background-color: #7A2E1D;
         }
-        html, body {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-        }
-        body{
-            background-image: url(/imagens/fundo.png);
+
+        body {
+            background-image: url(imagens/fundo.png);
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
-            margin: 0px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
         }
-        .linha{
-            background: rgba(255, 255, 255, 0.1);
 
+        .linha {
+            background: rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-
+            -webkit-backdrop-filter: blur(15px);
             border-radius: 15px;
             border: 1px solid rgba(255, 255, 255, 0.3);
         }
-        main{
+
+        main {
             width: 950px;
             margin: auto;
         }
-        
     </style>
+@endsection
 
-
-
-</head>
-<body>
-    @section('content')
-        <main>
-            <div class="container">
-                <div class="row border m-2 rounded linha shadow">
-                    <h1 style="color:white;">SOBRE NÓS</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima unde alias incidunt harum voluptatibus porro sapiente, eveniet, recusandae molestias saepe voluptate quam. Fugiat animi aspernatur soluta, doloremque illo velit possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, magni dolorem dolorum eveniet animi at sit veniam quos sapiente illum earum possimus incidunt commodi quia ducimus quo itaque? Porro, saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit cumque asperiores, nam quaerat nisi assumenda placeat rem quibusdam unde veniam praesentium nulla enim facilis, delectus saepe eligendi minima distinctio quasi!</p>
-                </div>
-
-                <div class="row border m-2 rounded linha">
-                    <h1 style="color:white;">NOSSA HISTÓRIA</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolor rerum cumque delectus aliquam fuga voluptatem nisi maxime? Vel voluptate consequatur aperiam quae dolorem, saepe recusandae dignissimos. Nemo, molestiae optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odio nam illo eum rerum? Doloremque aut sequi veniam, ex exercitationem debitis repellendus illum, harum consequuntur aspernatur veritatis velit odit nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ipsum facilis eaque ipsam? Distinctio nobis aspernatur exercitationem sunt repellat culpa vel adipisci labore. Dolorum tenetur eos corrupti nisi quasi. Maxime!</p>
-                </div>
-
-                <div class="row  m-2 rounded linha">
-                    <h1 style="color:white;">NOSSA EQUIPE</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolor rerum cumque delectus aliquam fuga voluptatem nisi maxime? Vel voluptate consequatur aperiam quae dolorem, saepe recusandae dignissimos. Nemo, molestiae optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odio nam illo eum rerum? Doloremque aut sequi veniam, ex exercitationem debitis repellendus illum, harum consequuntur aspernatur veritatis velit odit nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates perspiciatis qui pariatur ipsa provident aut officia, corporis rem veritatis exercitationem esse asperiores sequi praesentium fugit molestias! Explicabo dicta sit quaerat?</p>
-                </div>
-
+@section('content')
+    <main>
+        <div class="container">
+            <div class="row border m-2 rounded linha shadow">
+                <h1>SOBRE NÓS</h1>
+                <p>
+                    A Associação dos Artesãos de Caxias é uma iniciativa que tem como objetivo fortalecer, divulgar e
+                    valorizar o trabalho dos artesãos da cidade de Caxias – MA.
+                    O projeto foi criado para conectar os produtores locais com a comunidade e com novos públicos,
+                    promovendo o artesanato como expressão cultural e fonte de renda.
+                </p>
             </div>
-        </main>
-    @endsection
-</body>
-</html>
 
+            <div class="row border m-2 rounded linha">
+                <h1>NOSSA HISTÓRIA</h1>
+                <p>
+                    A associação nasceu da união de artesãos e estudantes do curso de Análise e Desenvolvimento de
+                    Sistemas da UniFacema, com o propósito de desenvolver uma plataforma digital que auxiliasse na
+                    organização e divulgação das atividades artesanais.
+                    Desde então, o grupo vem atuando para facilitar o cadastro, gerenciamento de produtos e
+                    comunicação entre os membros da associação.
+                </p>
+            </div>
 
+            <div class="row m-2 rounded linha">
+                <h1>NOSSA EQUIPE</h1>
+                <p>
+                    Nossa equipe é formada por artesãos locais, voluntários e estudantes dedicados ao fortalecimento da
+                    economia criativa de Caxias.
+                    Cada integrante contribui com seu talento, seja na produção artística, no desenvolvimento tecnológico
+                    ou na gestão do projeto.
+                </p>
+            </div>
+        </div>
+    </main>
+@endsection
