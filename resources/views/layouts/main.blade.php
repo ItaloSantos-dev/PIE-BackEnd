@@ -17,7 +17,7 @@
         <div class="logo">
             <a href="/paginainicial">
                 <img src="/imagens/logo.png" alt="Associação dos Artesãos de Caxias">
-                <h1>Associação dos Artesãos de Caxias</h1>
+                <h1 style="color:white;" id="textheader">Associação dos Artesãos de Caxias</h1>
             </a>
         </div>
         <nav>
@@ -51,9 +51,9 @@
             <div>
                 <h3>Redes Sociais</h3>
                 <div class="socials">
-                    <a href="https://www.facebook.com/p/Associação-dos-Artesãos-de-Caxias-100076232955626/?_rdr" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
-                    <a href="https://www.instagram.com/artesaosdecaxias_ma" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i><span>Instagram</span></a>
-                    <a href="https://wa.me/" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
+                    <a  href="https://www.facebook.com/p/Associação-dos-Artesãos-de-Caxias-100076232955626/?_rdr" target="_blank" aria-label="Facebook"><i style="color:white;" class="fab fa-facebook-f"></i><span>Facebook</span></a>
+                    <a  href="https://www.instagram.com/artesaosdecaxias_ma" target="_blank" aria-label="Instagram"><i style="color:white;" class="fab fa-instagram"></i ><span>Instagram</span></a>
+                    <a  href="https://wa.me/" target="_blank" aria-label="WhatsApp"><i style="color:white;" class="fab fa-whatsapp"></i><span>WhatsApp</span></a>
                 </div>
             </div>
         </div>
