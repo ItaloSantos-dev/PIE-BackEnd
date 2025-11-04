@@ -46,44 +46,45 @@
 
     <!-- Rodapé -->
     <footer>
-        <div class="footer-container">
-            <div>
-                <h3>Sobre Nós</h3>
-                <p>Promovemos o artesanato de Caxias, incentivando cultura, tradição e renda local.</p>
-            </div>
+        <div class="footer-container text-center ">
+            <div class="row">
+                <div class="col">
+                    <h3>Sobre Nós</h3>
+                    <p>Promovemos o artesanato de Caxias, incentivando cultura, tradição e renda local.</p>
+                    <div class="copyright">
+                        &copy; 2025 Associação dos Artesãos de Caxias. <br> Todos os direitos reservados.
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Links</h3>
+                    <a href="{{ route('sobrenos') }}">Sobre</a><br>
+                    <a href="#artesaos">Artesãos</a><br>
+                    <a href="#eventos">Eventos</a><br>
+                    <a href="{{ route('contato') }}">Contato</a>
+                </div>
+                <div class="col">
+                    <h3 class="">Redes Sociais</h3>
+                    <div class="socials d-flex align-items-center justify-content-center">
+                        <a href="https://www.facebook.com/p/Associação-dos-Artesãos-de-Caxias-100076232955626/?_rdr" 
+                        target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i><span>Facebook</span>
+                        </a>
 
-            <div>
-                <h3>Links</h3>
-                <a href="{{ route('sobrenos') }}">Sobre</a><br>
-                <a href="#artesaos">Artesãos</a><br>
-                <a href="#eventos">Eventos</a><br>
-                <a href="{{ route('contato') }}">Contato</a>
-            </div>
+                        <a href="https://www.instagram.com/artesaosdecaxias_ma" 
+                        target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i><span>Instagram</span>
+                        </a>
 
-            <div>
-                <h3>Redes Sociais</h3>
-                <div class="socials">
-                    <a href="https://www.facebook.com/p/Associação-dos-Artesãos-de-Caxias-100076232955626/?_rdr" 
-                       target="_blank" aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i><span>Facebook</span>
-                    </a>
-
-                    <a href="https://www.instagram.com/artesaosdecaxias_ma" 
-                       target="_blank" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i><span>Instagram</span>
-                    </a>
-
-                    <a href="https://wa.me/" 
-                       target="_blank" aria-label="WhatsApp">
-                        <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
-                    </a>
+                        <a href="https://wa.me/" 
+                        target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="copyright">
-            &copy; 2025 Associação dos Artesãos de Caxias. Todos os direitos reservados.
-        </div>
+        
     </footer>
 
     <!-- Bootstrap Script -->
@@ -97,3 +98,5 @@
     @yield('scripts')
 </body>
 </html>
+
+
