@@ -664,3 +664,42 @@ label {
   background-size: cover;
   /* Cobre todo o container */
 }
+/* ======== Ajustes para animação do botão Login ======== */
+
+/* Faz o link #btnLogin se comportar como botão visualmente */
+#btnLogin {
+  display: inline-block;      /* permite transform e sizing */
+  text-decoration: none;      /* remove underline */
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  /* opcional: se quiser que o link ocupe a mesma largura que o button, troque por display:block; */
+}
+
+/* Aplica o mesmo hover que existe para button:hover também ao link */
+#btnLogin:hover,
+button:hover {
+  transform: scale(0.95);
+  background-color: #a5361d; /* mantém comportamento já definido */
+}
+
+/* Classes que o script pode adicionar (garante comportamento idêntico) */
+.siteui-btn-animated {
+  transition: transform .12s ease, opacity .12s ease, filter .12s ease;
+  will-change: transform, opacity;
+}
+
+.siteui-btn-animated.shrink,
+.siteui-btn-animated:active,
+.siteui-btn-animated:focus {
+  transform: scale(.96);
+  opacity: .92;
+  filter: brightness(1.04);
+}
+
+/* Caso o JS apenas adicione "shrink" sem a outra classe */
+.shrink {
+  transform: scale(.96);
+  opacity: .92;
+  filter: brightness(1.04);
+  transition: transform .12s ease, opacity .12s ease;
+}

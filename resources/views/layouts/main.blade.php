@@ -91,7 +91,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Script de interatividade (Arthur) -->
-    <script src="{{ asset('js/arthur.js') }}"></script>
+    <script src="{{ asset('js/ui.js') }}"></script>
 
 
     <!-- Scripts específicos de cada página -->

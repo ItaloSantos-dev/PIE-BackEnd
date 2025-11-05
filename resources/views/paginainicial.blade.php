@@ -15,7 +15,17 @@
                     Um projeto dos alunos de ADS feito pra ajudar os artesãos de Caxias a divulgar seus produtos e
                     organizar suas atividades de um jeito simples e prático.
                 </p>
-                <img src="{{ asset('imagens/paginainicial/artesao.png') }}" alt="Foto de artesãos trabalhando em suas criações.">
+               
+
+                {{-- Carrossel de imagens --}}
+                <div id="site-carousel" style="max-width: 1000px; margin: 25px auto; border-radius: 12px; overflow: hidden;">
+                <img src="{{ asset('imagens\paginainicial\artesao.png') }}" alt="Artesãos de Caxias">
+                <img src="{{ asset('imagens\paginainicial\Produtos Artesanais.jpg') }}" alt="Produtos artesanais">
+                <img src="{{ asset('imagens\paginainicial\Feira de artesanatos.jpg') }}" alt="Feira de artesanato">
+                <img src="{{ asset('imagens\paginainicial\Oficina de artesao.jpg') }}" alt="Oficina de artesãos">
+                <img src="{{ asset('imagens\paginainicial\Exposiçao de  arte local.jpg') }}" alt="Exposição de arte local">
+                </div>
+
 
                 <p class="linha-de-acoes">
                     <a class="botao botao-primario" href="#funcoes">Ver recursos</a>
