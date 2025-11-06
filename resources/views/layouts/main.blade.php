@@ -32,7 +32,7 @@
             <ul>
                 <li><a href="{{ route('sobrenos') }}">Sobre</a></li>
                 <li><a href="#artesaos">Artesãos</a></li>
-                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="{{route('evento')}}">Eventos</a></li>
                 <li><a href="{{ route('contato') }}">Contato</a></li>
                 <li><a href="#associe" class="btn-cta">Associe-se</a></li>
             </ul>
@@ -40,7 +40,7 @@
     </header>
 
     <!-- Conteúdo principal -->
-    <main>
+    <main class="p-2">
         @yield('content')
     </main>
 
@@ -59,7 +59,7 @@
                     <h3>Links</h3>
                     <a href="{{ route('sobrenos') }}">Sobre</a><br>
                     <a href="#artesaos">Artesãos</a><br>
-                    <a href="#eventos">Eventos</a><br>
+                    <a href="{{route('evento')}}">Eventos</a><br>
                     <a href="{{ route('contato') }}">Contato</a>
                 </div>
                 <div class="col">

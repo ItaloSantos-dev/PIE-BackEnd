@@ -1,0 +1,31 @@
+        :root {
+            --bs-primary: #7a2e1d;
+            --bs-primary-rgb: 122, 46, 29;
+        }
+
+        .btn-primary {
+            background-color: #7a2e1d;
+            border-color: #7a2e1d;
+        }
+        .btn-primary:hover, .btn-primary:focus {
+            background-color: #7a2e1d;
+            border-color: #7a2e1d;
+            opacity: 0.9;
+        }
+
+        .btn-outline-primary {
+            color: #7a2e1d;
+            border-color: #7a2e1d;
+        }
+        .btn-outline-primary:hover, .btn-outline-primary:focus {
+            background-color: #7a2e1d70;
+            border-color: #7a2e1d;
+            color: #fff;
+        }
+
+        .badge.bg-primary {
+            background-color: #7a2e1d !important;
+        }
+        .text-primary { color: #7a2e1d !important; }
+        .bg-primary { background-color: #7a2e1d !important; }
+        .border-primary { border-color: #7a2e1d !important; }

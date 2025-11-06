@@ -18,3 +18,7 @@ Route::get('/sobre', function(){
 Route::get('/contato', function(){
     return view('contato');
 })->name('contato');
+
+Route::get('/eventos', function(){
+    return view('eventos');
+})->name('evento');
