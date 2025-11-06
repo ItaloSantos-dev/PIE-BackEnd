@@ -20,8 +20,8 @@ return new class extends Migration
             $table->decimal('valor_total', 10, 2);
             $table->timestamps();
 
-            $table->foreign('id_fornecedor')->references('id_fornecedor')->on('_fornecedores');
-            $table->foreign('id_materia')->references('id_materia')->on('materias_primas');
+            $table->foreign('id_fornecedor')->references('id_fornecedor')->on('_fornecedores')->onDelete('cascade');
+            $table->foreign('id_materia')->references('id_materia')->on('materias_primas')->onDelete('cascade');
         });
     }
 

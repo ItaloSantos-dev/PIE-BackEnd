@@ -19,8 +19,8 @@ return new class extends Migration
             $table->decimal('preco_unitario', 8, 2);
             $table->timestamps();
 
-            $table->foreign('id_venda')->references('id_venda')->on('_vendas');
-            $table->foreign('id_produto')->references('id_produto')->on('produto');
+            $table->foreign('id_venda')->references('id_venda')->on('_vendas')->onDelete('cascade');
+            $table->foreign('id_produto')->references('id_produto')->on('produto')->onDelete('cascade');
         });
     }
 
