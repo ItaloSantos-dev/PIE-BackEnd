@@ -14,4 +14,9 @@ class Instrutores extends Model
     {
         return $this->hasMany(Oficina::class, 'id_instrutor');
     }
+
+    public function eventos()
+    {
+        return $this->hasMany(Eventos::class, 'id_instrutor');
+    }
 }
