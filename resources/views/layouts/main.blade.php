@@ -31,7 +31,7 @@
         <nav>
             <ul>
                 <li><a href="{{ route('sobrenos') }}">Sobre</a></li>
-                <li><a href="#artesaos">Artesãos</a></li>
+                <li><a href="{{route('produtos')}}">Produtos</a></li>
                 <li><a href="{{route('evento')}}">Eventos</a></li>
                 <li><a href="{{ route('contato') }}">Contato</a></li>
                 <li><a href="#associe" class="btn-cta">Associe-se</a></li>
@@ -58,7 +58,7 @@
                 <div class="col">
                     <h3>Links</h3>
                     <a href="{{ route('sobrenos') }}">Sobre</a><br>
-                    <a href="#artesaos">Artesãos</a><br>
+                    <a href="{{route('produtos')}}">Produtos</a><br>
                     <a href="{{route('evento')}}">Eventos</a><br>
                     <a href="{{ route('contato') }}">Contato</a>
                 </div>

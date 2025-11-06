@@ -22,3 +22,7 @@ Route::get('/contato', function(){
 Route::get('/eventos', function(){
     return view('eventos');
 })->name('evento');
+
+Route::get('/produtos', function(){
+    return view('produtos');
+})->name('produtos');
