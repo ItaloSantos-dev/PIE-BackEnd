@@ -18,5 +18,7 @@ Route::get('/eventos', [EventoController::class, 'index'])->name('evento');
 
 Route::get('/produtos', [ProdutoController::class, 'index'])->name('produtos');
 
+Route::get('/eventos/{id}', [EventoController::class, 'show'])->name('eventos.show');
+
 ?>
 

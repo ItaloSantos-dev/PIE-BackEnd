@@ -1,0 +1,28 @@
+.produto-img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.texto-descricao {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+.spanhover:hover{
+    background-color: #7a2e1d70 !important;
+}
+.spanhover{
+    border: none;
+    background-color: #a4361d !important;
+    transition-duration: .2s ;
+}
+.textEvent{
+    color:  #a4361d !important;
+}

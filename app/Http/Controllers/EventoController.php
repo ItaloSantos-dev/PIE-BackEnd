@@ -15,4 +15,9 @@ class EventoController extends Controller
                            ->get();
         return view('eventos', ['eventos' => $eventos]);
     }
+
+    public function show($id){
+        $evento = Eventos::with('instrutor')->find($id);
+        return view('eventodetalhes', compact('evento'));
+    }
 }

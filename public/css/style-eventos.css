@@ -1,31 +1,67 @@
-        :root {
-            --bs-primary: #7a2e1d;
-            --bs-primary-rgb: 122, 46, 29;
-        }
+/* :root {
+    --bs-primary: #7a2e1d;
+    --bs-primary-rgb: 122, 46, 29;
+}
 
-        .btn-primary {
-            background-color: #7a2e1d;
-            border-color: #7a2e1d;
-        }
-        .btn-primary:hover, .btn-primary:focus {
-            background-color: #7a2e1d;
-            border-color: #7a2e1d;
-            opacity: 0.9;
-        }
+.btn-primary {
+    background-color: #7a2e1d;
+    border-color: #7a2e1d;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #7a2e1d;
+    border-color: #7a2e1d;
+    opacity: 0.9;
+}
 
-        .btn-outline-primary {
-            color: #7a2e1d;
-            border-color: #7a2e1d;
-        }
-        .btn-outline-primary:hover, .btn-outline-primary:focus {
-            background-color: #7a2e1d70;
-            border-color: #7a2e1d;
-            color: #fff;
-        }
+.btn-outline-primary {
+    color: #7a2e1d;
+    border-color: #7a2e1d;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    background-color: #7a2e1d70;
+    border-color: #7a2e1d;
+    color: #fff;
+}
 
-        .badge.bg-primary {
-            background-color: #7a2e1d !important;
-        }
-        .text-primary { color: #7a2e1d !important; }
-        .bg-primary { background-color: #7a2e1d !important; }
-        .border-primary { border-color: #7a2e1d !important; }
+.badge.bg-primary {
+    background-color: #7a2e1d !important;
+}
+.text-primary { color: #7a2e1d !important; }
+.bg-primary { background-color: #7a2e1d !important; }
+.border-primary { border-color: #7a2e1d !important; } */
+
+.eventoCard {
+    transition: transform .2s ease, box-shadow .2s ease;
+    border-radius: 14px;
+}
+
+.eventoCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+
+}
+.nomeEvento{
+    height: 10vh;
+    font-size: small;
+    font-weight: bold;
+}
+.precoEvento{
+    font-size: small;
+}
+
+.btnDetalhes{
+    font-size: small;
+    flex-wrap: nowrap;
+    width: 100%;
+    text-decoration: none !important;
+
+    background-color: #7a2e1d;
+    border-color: #7a2e1d;
+    
+}
+
+.btnDetalhes:hover{
+
+   background-color: #7a2e1d70;
+    border-color: #7a2e1d;
+}
