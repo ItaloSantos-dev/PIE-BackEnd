@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -15,23 +14,26 @@ class InstrutorSeeder extends Seeder
     {
         DB::table('instrutores')->insert([
             [
-                'nome' => 'Carlos Andrade',
-                'especialidade' => 'Musculação',
-                'email' => 'carlos.andrade@academia.com',
+                'id_instrutor' => 1,
+                'nome' => 'Carlos Silva',
+                'especialidade' => 'Treinamento Funcional',
+                'email' => 'carlos.silva@exemplo.com',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'nome' => 'Fernanda Lima',
-                'especialidade' => 'Pilates',
-                'email' => 'fernanda.lima@academia.com',
+                'id_instrutor' => 2,
+                'nome' => 'Maria Santos',
+                'especialidade' => 'Nutrição e Bem-Estar',
+                'email' => 'maria.santos@exemplo.com',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'nome' => 'Ricardo Souza',
-                'especialidade' => 'CrossFit',
-                'email' => 'ricardo.souza@academia.com',
+                'id_instrutor' => 3,
+                'nome' => 'João Oliveira',
+                'especialidade' => 'Nutrição Esportiva',
+                'email' => 'joao.oliveira@exemplo.com',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],

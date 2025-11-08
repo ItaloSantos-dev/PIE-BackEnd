@@ -2,8 +2,6 @@
 
 namespace Database\Seeders;
 
-use Carbon\Carbon;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -14,33 +12,42 @@ class CategoriaSeeder extends Seeder
      */
     public function run(): void
     {
-        $now = Carbon::now();
-
         DB::table('categorias_produtos')->insert([
             [
-                'nome_categoria' => 'Suplementos Proteicos',
-                'created_at' => $now,
-                'updated_at' => $now,
+                'id_categoria' => 1,
+                'nome_categoria' => 'Artesanato em Madeira',
+                'created_at' => now(),
+                'updated_at' => now(),
             ],
             [
-                'nome_categoria' => 'Vitaminas e Minerais',
-                'created_at' => $now,
-                'updated_at' => $now,
+                'id_categoria' => 2,
+                'nome_categoria' => 'Artesanato em Tecido',
+                'created_at' => now(),
+                'updated_at' => now(),
             ],
             [
-                'nome_categoria' => 'Pré-Treino',
-                'created_at' => $now,
-                'updated_at' => $now,
+                'id_categoria' => 3,
+                'nome_categoria' => 'Artesanato em Cerâmica',
+                'created_at' => now(),
+                'updated_at' => now(),
             ],
             [
-                'nome_categoria' => 'Acessórios Fitness',
-                'created_at' => $now,
-                'updated_at' => $now,
+                'id_categoria' => 4,
+                'nome_categoria' => 'Bijuterias',
+                'created_at' => now(),
+                'updated_at' => now(),
             ],
             [
-                'nome_categoria' => 'Snacks Saudáveis',
-                'created_at' => $now,
-                'updated_at' => $now,
+                'id_categoria' => 5,
+                'nome_categoria' => 'Decoração',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'id_categoria' => 6,
+                'nome_categoria' => 'Acessórios',
+                'created_at' => now(),
+                'updated_at' => now(),
             ],
         ]);
     }
